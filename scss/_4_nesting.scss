@@ -1,3 +1,5 @@
+// Not generate in css files
+/* generate in css file*/
 nav {
   background-color: $orange;
   display: flex;
@@ -18,7 +20,7 @@ nav {
       color: $gray-100;
       padding: 8px 16px;
 
-      /* & => parent */
+      //  & => parent
       &:hover{
         color: $white;
         background-color: darken($orange, 10%);

@@ -1,0 +1,26 @@
+/* Placeholdes */
+%toolbelt {
+  box-sizing: border-box;
+  border-top: 1px rgba(0, 0, 0, 0.12) solid;
+  padding: 16px 0;
+  width: 100%;
+}
+%box-shadow{
+  box-shadow: 0 2px 4px -2px #ccc;
+}
+.action-buttons{
+  @extend %toolbelt;
+  @extend %box-shadow;
+  color: #4285f4;
+}
+.reset-buttons {
+  @extend %toolbelt;
+  color: #cddc39;
+  &:hover{
+    @extend %box-shadow;
+  }
+}
+.card{
+  @extend %box-shadow;
+  padding: .5em 1em;
+}

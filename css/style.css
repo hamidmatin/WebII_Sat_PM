@@ -134,6 +134,7 @@ h1 {
   background-color: white;
 }
 
+/* generate in css file*/
 nav {
   background-color: #fd7e14;
   display: -webkit-box;
@@ -163,7 +164,6 @@ nav ul {
 nav ul a {
   color: #e6e6e6;
   padding: 8px 16px;
-  /* & => parent */
 }
 
 nav ul a:hover {
@@ -203,5 +203,31 @@ nav > a {
 
 .btn-secondary {
   background-color: #17a2b8;
+}
+
+/* Placeholdes */
+.action-buttons, .reset-buttons {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px rgba(0, 0, 0, 0.12) solid;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.action-buttons, .reset-buttons:hover, .card {
+  -webkit-box-shadow: 0 2px 4px -2px #ccc;
+          box-shadow: 0 2px 4px -2px #ccc;
+}
+
+.action-buttons {
+  color: #4285f4;
+}
+
+.reset-buttons {
+  color: #cddc39;
+}
+
+.card {
+  padding: .5em 1em;
 }
 /*# sourceMappingURL=style.css.map */
