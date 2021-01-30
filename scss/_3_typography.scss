@@ -19,3 +19,15 @@ $primary : yellow;
 .btn-primary{
     background-color: $primary;
 }
+
+.blue-darken-5{ background-color: darken($color: $blue, $amount: 50%);}
+.blue-darken-4{ background-color: darken($color: $blue, $amount: 40%);}
+.blue-darken-3{ background-color: darken($color: $blue, $amount: 30%);}
+.blue-darken-2{ background-color: darken($color: $blue, $amount: 20%);}
+.blue-darken-1{ background-color: darken($color: $blue, $amount: 10%);}
+.blue{ background-color: $blue;}
+.blue-lighten-1{ background-color: lighten($color: $blue, $amount: 10%);}
+.blue-lighten-2{ background-color: lighten($color: $blue, $amount: 20%);}
+.blue-lighten-3{ background-color: lighten($color: $blue, $amount: 30%);}
+.blue-lighten-4{ background-color: lighten($color: $blue, $amount: 40%);}
+.blue-lighten-5{ background-color: lighten($color: $blue, $amount: 50%);}
