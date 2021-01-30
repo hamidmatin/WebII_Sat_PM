@@ -1,0 +1,67 @@
+/****** Mixins *******/
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+// @mixin box-shadow{
+//   box-shadow: 0 2px 4px -2px #ccc;
+// }
+
+nav{
+  ul{
+    @include reset-list;
+    @extend %box-shadow;
+    a{
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
+.alert{
+  @extend %box-shadow;
+}
+
+/*** better mixin *******/
+@mixin transform($action) {
+  -webkit-transform: $action;
+  -moz-transform: $action;
+  -o-transform: $action;
+  transform: $action;
+}
+
+.test{
+  @include transform(tranlate(50px))
+}
+
+// Mixin with default parameter
+@mixin rounded-border($radius: 4px) {
+  border-radius: $radius;
+}
+
+.alert{
+  @include rounded-border(8px)
+}
+
+.rounded-sm{
+  @include rounded-border;
+}
+
+.avatar{
+  @include rounded-border(50%)
+}
+
+@mixin border($color: #f1f1f1) {
+  border: 1px solid $color;
+}
+.border-primary{
+  @include border($primary);
+}
+.border-secondary{
+  @include border($secondary);
+}
+.border-greeb{
+  @include border(#44ec60);
+}

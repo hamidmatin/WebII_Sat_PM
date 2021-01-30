@@ -214,7 +214,7 @@ nav > a {
   width: 100%;
 }
 
-.action-buttons, .reset-buttons:hover, .card {
+.action-buttons, .reset-buttons:hover, .card, nav ul, .alert {
   -webkit-box-shadow: 0 2px 4px -2px #ccc;
           box-shadow: 0 2px 4px -2px #ccc;
 }
@@ -229,5 +229,47 @@ nav > a {
 
 .card {
   padding: .5em 1em;
+}
+
+/****** Mixins *******/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul a {
+  display: block;
+  text-decoration: none;
+}
+
+/*** better mixin *******/
+.test {
+  -webkit-transform: tranlate(50px);
+  transform: tranlate(50px);
+}
+
+.alert {
+  border-radius: 8px;
+}
+
+.rounded-sm {
+  border-radius: 4px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.border-primary {
+  border: 1px solid yellow;
+}
+
+.border-secondary {
+  border: 1px solid #17a2b8;
+}
+
+.border-greeb {
+  border: 1px solid #44ec60;
 }
 /*# sourceMappingURL=style.css.map */
