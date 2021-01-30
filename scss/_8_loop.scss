@@ -1,0 +1,61 @@
+/********** Loops **********/
+/******* for loop *********/
+@for $count from 1 to 5 {
+  .text-red-darken-#{$count} {
+    color: darken($color: red, $amount: $count * 10%);
+  }
+}
+@for $count from 1 through 5 {
+  .text-red-lighten-#{$count} {
+    color: lighten($color: red, $amount: $count * 10%);
+  }
+}
+
+@mixin create-text-lighten-color($name, $color, $count: 5, $percent: 10%) {
+  @for $i from 1 through $count {
+    .text-#{$name}-lighten-#{$i} {
+      color: lighten($color: $color, $amount: $i * $percent);
+    }
+  }
+}
+
+@include create-text-lighten-color(dark, #000, 10, 10%);
+@include create-text-lighten-color(purple, purple, 5, 5%);
+
+$column-count: 5;
+
+@for $i from 1 through $column-count {
+  .col-#{$i}{ width: 100% / $column-count * $i;}
+}
+
+/********* List & each Loop*********/
+// $sizes: 40px 50px 80px;
+$sizes: 40, 60, 80;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size + px;
+    height: $size + px;
+    width: $size + px;
+  }
+}
+
+/************ Map ********/
+$font-weights: ("light": 300, "regular": 400, "medium": 500, "bold": 700);
+
+@each $name, $value in $font-weights {
+  .font-weight-#{$name}{
+    font-weight: $value;
+  }
+}
+
+/**************************/
+$medias: ('sm': 576px, 'md':768px, 'lg': 992px, 'xl': 1200px, 'xxl': 1500px);
+
+@each $media-name, $media-val in $medias {
+  @media screen and (max-width: $media-val){
+    @for $i from 1 through $column-count {
+      .col-#{$media-name}-#{$i}{ width: 100% / $column-count * $i;}
+    }
+  }
+}
