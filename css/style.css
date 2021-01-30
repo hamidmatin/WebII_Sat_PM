@@ -272,4 +272,33 @@ nav ul a {
 .border-greeb {
   border: 1px solid #44ec60;
 }
+
+.sample {
+  margin: 8px;
+}
+
+.btn-primary {
+  color: yellow;
+}
+
+.icon-mail {
+  background-image: url("/icons/mail.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-post {
+  background-image: url("/icons/post.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-delete {
+  background-image: url("/icons/delete.svg");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /*# sourceMappingURL=style.css.map */
