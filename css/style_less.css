@@ -39,6 +39,79 @@
     width: 800px;
   }
 }
+@media (min-width: 768px) {
+  .element {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .element {
+    font-size: 1.5rem;
+  }
+}
+.secondary {
+  background-color: #333;
+}
+#secondary {
+  background-color: #333;
+}
+.my-class1 {
+  font-size: large;
+}
+.another {
+  font-size: large;
+  background-color: #c03333;
+  width: 100px;
+}
+.another:hover {
+  background-color: #3388c0;
+}
+.another:hover {
+  width: 50px;
+}
+.card {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.box {
+  box-shadow: inset 0 0 10px #555, 0 0 20px black;
+  width: 300px;
+}
+.my-class3 {
+  transform: scale(1.5) rotate(45deg) translate(50%);
+}
+.box-shadow,
+.action-buttons,
+.reset-buttons:hover,
+.test {
+  box-shadow: 0 2px 4px -2px #ccc;
+}
+.box-shadow.active,
+.test.active {
+  box-shadow: 0 2px 20px -2px #ce3636;
+}
+.alert.box-shadow,
+.alert.test {
+  background-color: #85dfd0;
+}
+.toolbelt,
+.action-buttons,
+.reset-buttons {
+  box-sizing: border-box;
+  border-top: 1px rgba(0, 0, 0, 0.12) solid;
+  padding: 16px 0;
+  width: 100%;
+}
+.action-buttons {
+  color: #4285f4;
+}
+.reset-buttons {
+  color: #cddc39;
+}
+.test {
+  font-size: large;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffc107;

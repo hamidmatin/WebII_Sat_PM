@@ -1,0 +1,33 @@
+.box-shadow{
+  box-shadow: 0 2px 4px -2px #ccc;
+}
+.box-shadow.active{
+  box-shadow: 0 2px 20px -2px rgb(206, 54, 54);
+
+}
+.alert.box-shadow{
+  background-color: rgb(133, 223, 208);
+}
+.toolbelt {
+  box-sizing: border-box;
+  border-top: 1px rgba(0, 0, 0, 0.12) solid;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.action-buttons:extend(.box-shadow, .toolbelt){
+  
+  color: #4285f4;
+}
+
+.reset-buttons {
+  color: #cddc39;
+  &:extend(.toolbelt);
+  &:hover{
+    &:extend(.box-shadow);
+  }
+}
+
+.test:extend(.box-shadow all){
+  font-size: large;
+}

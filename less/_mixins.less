@@ -1,0 +1,34 @@
+.my-class1{
+  font-size: large;
+}
+
+#my-id(){
+  background-color: rgb(192, 51, 51);
+  &:hover{
+    background-color: rgb(51, 136, 192);
+  }
+}
+
+.my-class2(@width){
+  width: @width;
+  &:hover{
+    width: (@width / 2);
+  }
+}
+
+.another{
+  .my-class1();
+  #my-id();
+  .my-class2(100px);
+}
+
+.border-radius(@radius: 4px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.card{
+  .border-radius(8px);
+
+}

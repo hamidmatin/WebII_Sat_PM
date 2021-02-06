@@ -1,0 +1,24 @@
+@min768: ~"(min-width: 768px)";
+@min992: ~"(min-width: 992px)";
+
+.element {
+  @media @min768 {
+    font-size: 1.2rem;
+  }
+  @media @min992 {
+    font-size: 1.5rem;
+  }
+}
+
+@ext: secondary;
+@prop: background-color;
+
+.@{ext}{
+  @{prop}: @@ext;
+}
+
+#@{ext}{
+  @{prop}: @@ext;
+}
+
+
