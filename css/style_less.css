@@ -1,0 +1,45 @@
+#header {
+  color: black;
+}
+#header .navigation {
+  font-size: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#header .navigation a {
+  text-decoration: none;
+  display: block;
+}
+#header .navigation a:hover {
+  background-color: #ebb3b3;
+}
+#header .logo {
+  width: 300px;
+}
+.component {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .component {
+    width: 600px;
+  }
+  .component.d-md-block {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .component {
+    background-image: url(/img/retina2x.png);
+  }
+}
+@media (min-width: 1280px) {
+  .component {
+    width: 800px;
+  }
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffc107;
+}
